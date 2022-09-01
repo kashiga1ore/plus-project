@@ -15,34 +15,40 @@
   </head>
   <body>
     <div class="container">
-      <div class="weather-app">
-        <h1>singapore, singapore</h1>
-        <ul>
-          <li>thursday 1100</li>
-          <li>thunderstorm</li>
-        </ul>
-        <div class="row">
-          <div class="col-6">
-            <img
-              src="https://ssl.gstatic.com/onebox/weather/64/thunderstorms.png"
-              alt="thunders"
-            />
-            32°C |°F
+      <div class="weather-app-wrapper">
+        <div class="weather-app">
+          <div class="overview">
+          <h1>singapore, singapore</h1>
+          <ul>
+            <li>thursday 1100</li>
+            <li>thunderstorm</li>
+          </ul>
           </div>
-          <div class="col-6">
-            <ul>
-              <li>precipitation 80%</li>
-              <li>humuidity 74%</li>
-              <li>wind 13km/h</li>
-            </ul>
+          <div class="row">
+            <div class="col-6">
+              <div class="d-flex weather-temperature">
+                <img
+                  src="https://ssl.gstatic.com/onebox/weather/64/thunderstorms.png"
+                  alt="thunders" id="icon"/>
+                <strong> 32</strong><span class="unitd">°C |°F</span>
+              </div>
+              </div>
+              <div class="col-6">
+                <ul>
+                  <li>precipitation 80%</li>
+                  <li>humuidity 74%</li>
+                  <li>wind 13km/h</li>
+                </ul>
+              </div>
+            </div>
           </div>
+          <small>
+            <a href="https://github.com/kashiga1ore/plus-project">
+              open source code</a
+            >
+            by kashi
+          </small>
         </div>
-        <small>
-          <a href="https://github.com/kashiga1ore/plus-project">
-            open source code</a
-          >
-          by kashi
-        </small>
       </div>
     </div>
     <script src="script.js"></script>
