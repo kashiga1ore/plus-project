@@ -49,3 +49,13 @@ li {
   font-size: 18px;
   color: rgb(66, 94, 78);
 }
+
+.weather-temperature .active {
+  color: rgb(66, 94, 78);
+  cursor: default;
+}
+
+.weather-temperature .active:hover {
+  text-decoration: none;
+  color: rgb(119, 168, 140);
+}
