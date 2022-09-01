@@ -5,6 +5,7 @@ h1 {
   font-weight: bold;
   font-size: 40px;
   line-height: 50px;
+  text-transform: lowercase;
 }
 ul {
   margin: 0;

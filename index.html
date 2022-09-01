@@ -10,6 +10,8 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
     <link rel="stylesheet" href="styles.css" />
     <title>weather app</title>
   </head>
@@ -18,10 +20,10 @@
       <div class="weather-app-wrapper">
         <div class="weather-app">
           <div class="overview">
-          <h1>singapore, singapore</h1>
+          <h1 id="city"></h1>
           <ul>
             <li>thursday 1100</li>
-            <li>thunderstorm</li>
+            <li id="description"></li>
           </ul>
           </div>
           <div class="row">
@@ -30,14 +32,13 @@
                 <img
                   src="https://ssl.gstatic.com/onebox/weather/64/thunderstorms.png"
                   alt="thunders" id="icon"/>
-                <strong> 32</strong><span class="unitd">°C |°F</span>
+                <strong id="temperature"></strong><span class="units">°C |°F</span>
               </div>
               </div>
               <div class="col-6">
                 <ul>
-                  <li>precipitation 80%</li>
-                  <li>humuidity 74%</li>
-                  <li>wind 13km/h</li>
+                  <li>humidity: <span id="humidity"></span>%</li>
+                  <li>wind: <span id="wind"></span>km/h</li>
                 </ul>
               </div>
             </div>
