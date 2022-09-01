@@ -19,28 +19,44 @@
     <div class="container">
       <div class="weather-app-wrapper">
         <div class="weather-app">
+          <form id="search-form">
+            <div class="row">
+              <div class="col-9">
+                <input
+                  type="search"
+                  placeholder="type a city..."
+                  class="form-control"
+                />
+              </div>
+              <div class="col-3">
+                <input type="submit" value="search" class="btn btn-primary" />
+              </div>
+            </div>
+          </form>
           <div class="overview">
-          <h1 id="city"></h1>
-          <ul>
-            <li> last updated: <span id="date"></span> </li>
-            <li id="description"></li>
-          </ul>
+            <h1 id="city"></h1>
+            <ul>
+              <li>last updated: <span id="date"></span></li>
+              <li id="description"></li>
+            </ul>
           </div>
           <div class="row">
             <div class="col-6">
               <div class="d-flex weather-temperature">
                 <img
                   src="https://ssl.gstatic.com/onebox/weather/64/thunderstorms.png"
-                  alt="thunders" id="icon"/>
-                <strong id="temperature"></strong><span class="units">°C |°F</span>
+                  alt="class"
+                  id="icon"
+                />
+                <strong id="temperature"></strong>
+                <span class="units">°C |°F</span>
               </div>
-              </div>
-              <div class="col-6">
-                <ul>
-                  <li>humidity: <span id="humidity"></span>%</li>
-                  <li>wind: <span id="wind"></span>km/h</li>
-                </ul>
-              </div>
+            </div>
+            <div class="col-6">
+              <ul>
+                <li>humidity: <span id="humidity"></span>%</li>
+                <li>wind: <span id="wind"></span>km/h</li>
+              </ul>
             </div>
           </div>
           <small>
