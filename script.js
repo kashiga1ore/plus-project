@@ -20,6 +20,31 @@ function formatDate(timestamp) {
   let day = days[date.getDay()];
   return `${day} ${hours}:${minutes}`;
 }
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let forecastHTML = `<div class="row">`;
+  let days = ["fri", "sat", "sun"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `  <div class="col-2">
+         <div class="forecast-date">${day} <br /></div>
+            <img
+              src="http://openweathermap.org/img/wn/04d@2x.png"
+              alt="clouds"
+              width="36px"
+            />
+            <br />
+            <div class="forecast-temperature">
+              <span class="forecast-maximum">28° </span>
+              <span class="forecast-minimum"> 26° </span>
+          </div>
+      </div>`;
+  });
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
 
 function displayTemperature(response) {
   let temperatureElement = document.querySelector("#temperature");
@@ -85,3 +110,4 @@ let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
 search("singapore");
+displayForecast();
