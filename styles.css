@@ -87,3 +87,7 @@ li {
 .forecast-minimum {
   color: rgb(119, 168, 140);
 }
+.weather-forecast {
+  border: 3px solid rgb(119, 168, 140);
+  padding: 20px;
+}
