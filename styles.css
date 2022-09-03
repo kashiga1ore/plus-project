@@ -91,3 +91,14 @@ li {
   border: 3px solid rgb(119, 168, 140);
   padding: 20px;
 }
+small {
+  color: rgb(66, 94, 78);
+}
+a {
+  color: rgb(119, 168, 140);
+}
+
+a:hover {
+  text-decoration: none;
+  color: rgb(66, 94, 78);
+}
